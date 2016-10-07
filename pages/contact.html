@@ -3,7 +3,8 @@
 <html lang="en"> <!--English-->
 <head> <!--Document head-->
     <meta charset="utf-8" /> <!--Character set-->
-    <title>Contact</title> <!--Page title-->
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" /> <!--Meta-->
+    <title>Contact | Kevin Idzik</title> <!--Page title-->
     <link href="../css/contact-styles.css" rel="stylesheet" type="text/css" /> <!--CSS-->
     <link href="../images/favicon.ico" rel="icon" type="image/x-icon" /> <!--Favicon-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' /> <!--External font-->
@@ -12,14 +13,14 @@
 </head>
 <body>
     <div id="content" class="hidden">
-        <h1><a href="../index.html">KEVIN IDZIK</a></h1>
+        <h1><!--#include file="header.html"--></h1>
         <ul id="navigation">
             <li><a href="../index.html" class="navigationButtons">HOME</a></li>
             <li><a href="resume.html" class="navigationButtons">RÉSUMÉ</a></li>
             <li id="dropdownParent">
-                <a class="navigationButtons">PROJECTS</a>
+                <a href="projects.html" class="navigationButtons">PROJECTS</a>
                 <ul>
-                    <li class="dropdownChild"><a href="projects/battleBall.html">BATTLEBALL</a></li>
+                    <li class="dropdownChild"><a href="projects/engine.html">OPENGL ENGINE</a></li>
                     <li class="dropdownChild"><a href="projects/tutorialWebsite.html">TUTORIAL WEBSITE</a></li>
                     <li class="dropdownChild"><a href="projects/flockingSimulation.html">FLOCKING SIMULATION</a></li>
                     <li class="dropdownChild"><a href="projects/hvz.html">HUMANS VS. ZOMBIES</a></li>
@@ -30,8 +31,28 @@
         </ul>
         <div id="divider"></div>
         <div id="column">
-            <p id="textWrap">A JavaScript form will be placed here when I have learned more about JavaScript. For now, I can be contacted via email at kidzik@mail.rit.edu.</p>
+            <form id="textWrap" method="post" action="formmail.php" name="ContactForm">
+                <input type="hidden" name="recipients" value="kidzik@mail.rit.edu" /> <!-- STEP 2: Put your email address in the 'recipients' value. Note that you also have to allow this email address in the $TARGET_EMAIL setting within formmail.php! -->
+                <input type="hidden" name="required" value="EmailAddress:Your email address,FullName:Your name,Message:Your message" /> <!-- STEP 3: Specify required fields in the 'required' value - or leave unchanged. NOTE: DO NOT put your email address and name here. "Your email address" and "Your name" are error messages for your users to see, not placeholders for you to replace. -->
+                <input type="hidden" name="subject" value="Portfolio Contact Form" /> <!-- STEP 4: Put your subject line in the 'subject' value. -->
+                <input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" /> <!--This derives (creates) "email" and "realname" special fields from the input fields -->
+                <input type="hidden" name="mail_options" value="Exclude=email;realname" /> <!--This excludes the "email" and "realname" special fields from the body of the email you receive -->
+
+                <p>Enter your first and last name:</p>
+                <input type="text" name="FullName" />
+
+                <p>Enter your email address:</p>
+                <input type="text" name="EmailAddress" />
+
+                <p>Enter your message:</p>
+                <textarea name="Message" rows="10" cols="45"></textarea>
+
+                <br />
+
+                <input id="submit" type="submit" value="Submit" />
+            </form>
         </div>
+        <footer><!--#include file="footer.html"--></footer>
     </div>
 </body>
 </html>

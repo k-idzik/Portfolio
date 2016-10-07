@@ -12,6 +12,13 @@ body
 	margin: 0px;
 	padding: 0px;
 }
+footer
+{
+    bottom: 0;
+    clear: both;
+    position: fixed;
+    right: 0;
+}
 h1
 {
     float: left;
@@ -64,6 +71,15 @@ ul
     float: right;
     margin-top: 32px;
 }
+#submit
+{
+    background-color: #FEFEFE;
+    border: solid;
+    border-color: #000000;
+    border-width: 1px;
+    padding: 10px;
+    text-align: center;
+}
 #textWrap
 {
     border: solid;
@@ -87,6 +103,7 @@ ul
     padding-right: 30px;
     padding-top: 15px;
     text-align: center;
+    transition: .65s ease-in-out;
 }
 .dropdownChild + .dropdownChild
 {
@@ -95,7 +112,6 @@ ul
 .dropdownChild:hover
 {
     border-bottom-color: #CACACA;
-    transition: .65s ease-in-out;
 }
 .hidden
 {
@@ -111,24 +127,79 @@ ul
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
+    transition: .65s ease-in-out;
 }
 .navigationButtons:hover
 {
     border-bottom-color: #CACACA;
-    transition: .65s ease-in-out;
 }
 
-@media screen and (max-width: 480px)
+@media screen and (max-width: 1280px)
 {
-    #column
+    #columnLeft
+    {
+        padding-top: 150px;
+        width: 60%;
+    }
+    #columnRight
+    {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 720px)
+{
+    h1
+    {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    footer
+    {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    #columnLeft
     {
         padding-top: 0px;
+        width: 58%;
+    }
+    #columnRight
+    {
+        width: 42%;
+    }
+
+    .dropdownChild
+    {
+        height: 42px;
+    }
+    .navigationButtons
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    #columnLeft
+    {
+        clear: both;
+        float: none;
         width: 100%;
+    }
+    #columnRight
+    {
+        display: none;
     }
     #navigation
     {
         display: flex;
-        float: right;
+        float: none;
     }
 
     .navigationButtons
@@ -136,27 +207,10 @@ ul
         padding-left: 15px;
         padding-right: 15px;
     }
-}
-@media screen and (max-width: 1300px)
-{
-    #columnLeft
+    .textWrap
     {
-        padding-top: 100px;
-        width: 60%;
-    }
-    #columnRight
-    {
-        display: none;
-    }
-}
-@media screen and (max-width: 1740px)
-{
-    #columnLeft
-    {
-        width: 60%;
-    }
-    #columnRight
-    {
-        width: 40%
+        margin-left: 50px;
+        margin-right: -140px;
+        margin-top: -50px;
     }
 }

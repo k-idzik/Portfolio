@@ -12,12 +12,23 @@ body
 	margin: 0px;
 	padding: 0px;
 }
+footer
+{
+    bottom: -10px;
+    position: fixed;
+    right: 0;
+}
 h1
 {
     float: left;
     margin-bottom: 0px;
     margin-left: 30px;
     margin-top: 15px;
+}
+img
+{
+    height: 100%;
+    width: 100%;
 }
 li
 {
@@ -79,7 +90,7 @@ ul
     box-shadow: 4px 4px 8px 0px #000000, 2px 2px 14px 0px #000000;
     display: block;
     float: right;
-    margin-right: 50px;
+    margin: 25px;
     margin-top: 50px;
 }
 
@@ -96,6 +107,7 @@ ul
     padding-right: 30px;
     padding-top: 15px;
     text-align: center;
+    transition: .65s ease-in-out;
 }
 .dropdownChild + .dropdownChild
 {
@@ -104,7 +116,6 @@ ul
 .dropdownChild:hover
 {
     border-bottom-color: #CACACA;
-    transition: .65s ease-in-out;
 }
 .hidden
 {
@@ -120,11 +131,11 @@ ul
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
+    transition: .65s ease-in-out;
 }
 .navigationButtons:hover
 {
     border-bottom-color: #CACACA;
-    transition: .65s ease-in-out;
 }
 .textWrap
 {
@@ -139,46 +150,62 @@ ul
     margin-top: -25px;
 }
 
-@keyframes colorChanger
+@media screen and (max-width: 1280px)
 {
-    from
+    #columnLeft
     {
-        text-shadow: 0px 0px 1px #FF0000, 0px 0px 1px #FF0000, 0px 0px 1px #FF0000, 0px 0px 1px #FF0000;
+        padding-top: 150px;
+        width: 60%;
     }
-    14.28%
+    #columnRight
     {
-        text-shadow: 0px 0px 1px #FF7700, 0px 0px 1px #FF7700, 0px 0px 1px #FF7700, 0px 0px 1px #FF7700;
+        width: 40%;
     }
-    28.56%
+}
+@media screen and (max-width: 720px)
+{
+    h1
     {
-        text-shadow: 0px 0px 1px #FFDD00, 0px 0px 1px #FFDD00, 0px 0px 1px #FFDD00, 0px 0px 1px #FFDD00;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
-    42.84%
+    footer
     {
-        text-shadow: 0px 0px 1px #00FF00, 0px 0px 1px #00FF00, 0px 0px 1px #00FF00, 0px 0px 1px #00FF00;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 100%;
     }
-    57.12%
+
+    #columnLeft
     {
-        text-shadow: 0px 0px 1px #0000FF, 0px 0px 1px #0000FF, 0px 0px 1px #0000FF, 0px 0px 1px #0000FF;
+        padding-top: 0px;
+        width: 58%;
     }
-    71.40%
+    #columnRight
     {
-        text-shadow: 0px 0px 1px #8A2BE2, 0px 0px 1px #8A2BE2, 0px 0px 1px #8A2BE2, 0px 0px 1px #8A2BE2;
+        width: 42%;
     }
-    85.68%
+
+    .dropdownChild
     {
-        text-shadow: 0px 0px 1px #C77DF3, 0px 0px 1px #C77DF3, 0px 0px 1px #C77DF3, 0px 0px 1px #C77DF3;
+        height: 42px;
     }
-    to
+    .navigationButtons
     {
-        text-shadow: 0px 0px 1px #FF4400, 0px 0px 1px #FF4400, 0px 0px 1px #FF4400, 0px 0px 1px #FF4400;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 @media screen and (max-width: 480px)
 {
     #columnLeft
     {
-        padding-top: 0px;
+        clear: both;
+        float: none;
         width: 100%;
     }
     #columnRight
@@ -201,28 +228,5 @@ ul
         margin-left: 50px;
         margin-right: -140px;
         margin-top: -50px;
-    }
-}
-@media screen and (max-width: 1300px)
-{
-    #columnLeft
-    {
-        padding-top: 100px;
-        width: 60%;
-    }
-    #columnRight
-    {
-        display: none;
-    }
-}
-@media screen and (max-width: 1740px)
-{
-    #columnLeft
-    {
-        width: 60%;
-    }
-    #columnRight
-    {
-        width: 40%
     }
 }

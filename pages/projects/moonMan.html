@@ -3,8 +3,9 @@
 <html lang="en"> <!--English-->
 <head> <!--Document head-->
     <meta charset="utf-8" /> <!--Character set-->
-    <title>MoonMan</title> <!--Page title-->
-    <link href="../../css/moonMan-styles.css" rel="stylesheet" type="text/css" /> <!--CSS-->
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" /> <!--Meta-->
+    <title>MoonMan | Kevin Idzik</title> <!--Page title-->
+    <link href="../../css/projects-styles.css" rel="stylesheet" type="text/css" /> <!--CSS-->
     <link href="../../images/favicon.ico" rel="icon" type="image/x-icon" /> <!--Favicon-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' /> <!--External font-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!--JQuery-->
@@ -12,14 +13,14 @@
 </head>
 <body>
     <div id="content" class="hidden">
-        <h1><a href="../../index.html">KEVIN IDZIK</a></h1>
+        <h1><!--#include file="header.html"--></h1>
         <ul id="navigation">
             <li><a href="../../index.html" class="navigationButtons">HOME</a></li>
             <li><a href="../resume.html" class="navigationButtons">RÉSUMÉ</a></li>
             <li id="dropdownParent">
-                <a id="currentNavigationButton" class="navigationButtons">PROJECTS</a>
+                <a href="../projects.html" id="currentNavigationButton" class="navigationButtons">PROJECTS</a>
                 <ul>
-                    <li class="dropdownChild"><a href="battleBall.html">BATTLEBALL</a></li>
+                    <li class="dropdownChild"><a href="engine.html">OPENGL ENGINE</a></li>
                     <li class="dropdownChild"><a href="tutorialWebsite.html">TUTORIAL WEBSITE</a></li>
                     <li class="dropdownChild"><a href="flockingSimulation.html">FLOCKING SIMULATION</a></li>
                     <li class="dropdownChild"><a href="hvz.html">HUMANS VS. ZOMBIES</a></li>
@@ -40,6 +41,7 @@
         <div id="columnRight">
             <img src="../../images/moonMan.png" width="640" height="360" alt="A thumbnail depicting MoonMan" id="thumbnail"/>
         </div>
+        <footer><!--#include file="footer.html"--></footer>
     </div>
 </body>
 </html>

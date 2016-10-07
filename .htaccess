@@ -1,0 +1,2 @@
+DirectoryIndex notError.html
+ErrorDocument 404 /kdi4293/230/portfolio/error/error.html
