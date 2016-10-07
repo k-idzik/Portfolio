@@ -2,5 +2,5 @@ DirectoryIndex notError.html
 ErrorDocument 404 /kdi4293/230/portfolio/error/error.html
 
 RewriteEngine on
-RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://%{HTTPS_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTPS_HOST}%{REQUEST_URI} [L,R=301]
