@@ -10,9 +10,9 @@ var gasType = "reg";
 var price = "price";
 
 //Event Handlers
-//document.querySelector("#worldZoomButton").onclick = function() {
-//    map.setZoom(1);
-//}
+document.querySelector("#worldZoomButton").onclick = function() {
+    initGas();
+}
 //document.querySelector("#defaultZoomButton").onclick = function() {
 //    map.setZoom(16);
 //}
@@ -36,8 +36,6 @@ function initMap() {
     //Map tilt
     map.mapTypeId = 'satellite';
     map.setTilt(45);
-    
-    initGas();
 }
 
 //Initialize the gas data
@@ -74,7 +72,7 @@ function initGas() {
 
 //Return the gas data
 function returnData(data) {
-    console.dir(data);
+    //console.dir(data);
 }
 
 function addMarker(latitude, longitude, title) {
