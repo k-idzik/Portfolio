@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html> <!--HTML-->
+
+<html lang="en"> <!--English-->
+<head> <!--Document head-->
+    <meta charset="utf-8" /> <!--Character set-->
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" /> <!--Meta-->
+    <title>Tutorial Website | Kevin Idzik</title> <!--Page title-->
+    <link href="../../css/projects-styles.css" rel="stylesheet" type="text/css" /> <!--CSS-->
+    <link href="../../images/favicon.ico" rel="icon" type="image/x-icon" /> <!--Favicon-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' /> <!--External font-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!--JQuery-->
+    <script src="../../scripts/pageFunctions.js"></script> <!--Script for page functions-->
+</head>
+<body>
+    <div id="content" class="hidden">
+        <h1><!--#include file="header.html"--></h1>
+        <ul id="navigation">
+            <li><a href="../../index.html" class="navigationButtons">HOME</a></li>
+            <li><a href="../resume.html" class="navigationButtons">RÉSUMÉ</a></li>
+            <li id="dropdownParent">
+                <a href="../projects.html" id="currentNavigationButton" class="navigationButtons">PROJECTS</a>
+                <ul>
+                    <li class="dropdownChild"><a href="engine.html">OPENGL ENGINE</a></li>
+                    <li class="dropdownChild"><a href="#">TUTORIAL WEBSITE</a></li>
+                    <li class="dropdownChild"><a href="flockingSimulation.html">FLOCKING SIMULATION</a></li>
+                    <li class="dropdownChild"><a href="hvz.html">HUMANS VS. ZOMBIES</a></li>
+                    <li class="dropdownChild"><a href="moonMan.html">MOONMAN</a></li>
+                </ul>
+            </li>
+            <li><a href="../contact.html" class="navigationButtons">CONTACT</a></li>
+        </ul>
+        <div id="divider"></div>
+        <div id="columnLeft">
+            <h2 class="textWrap">TUTORIAL WEBSITE</h2>
+            <p class="textWrap">I created a Minecraft command block tutorial that implements teams for a Web Design class, which required some sort of step-by-step tutorial in a format friendly to different screen resolutions. I chose the Minecraft topic because it was something I was already familliar with, but also could be updated due to changes that had recently occured in the game. I used a div based navigation system, which seemed great at the time, but could have probably been implemented much easier and with more extensibility using a list based approach. I used many images and supporting text to give clear directions to interested users, and tried to keep with a light-colored theme and readable font. Overall, I would say I'm happy with how this project turned out, but I would approach some mobile design choices differently if I were to revisit this project. If you'd like to visit this website, simply click the link below and you will be whisked to its location.</p>
+            <div id="linkBox">
+                <h3 class="textWrap"><a href="../../../Project1/index.html" target="_blank">Go to website</a></h3>
+            </div>
+        </div>
+        <div id="columnRight">
+            <img src="../../images/tutorialWebsiteThumbnail.png" width="512" height="288" alt="A thumbnail depicting my tutorial website" id="thumbnail"/>
+        </div>
+        <footer><!--#include file="footer.html"--></footer>
+    </div>
+</body>
+</html>
