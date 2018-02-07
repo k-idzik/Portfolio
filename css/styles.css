@@ -26,10 +26,6 @@ img {
     height: 100%;
     width: 100%;
 }
-img #404Img {
-    display: block;
-    margin: auto;
-}
 indexFooter {
     bottom: -10px;
     position: fixed;
@@ -45,6 +41,10 @@ ul {
 #404Column {
     margin-top: 50px;
     width: 100%;
+}
+#404Img img {
+    display: block;
+    margin: auto;
 }
 #column {
     width: 950px;
