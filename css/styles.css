@@ -26,6 +26,10 @@ img {
     height: 100%;
     width: 100%;
 }
+img #404Img {
+    display: block;
+    margin: auto;
+}
 indexFooter {
     bottom: -10px;
     position: fixed;
@@ -83,9 +87,9 @@ ul {
     margin-top: 50px;
 }
 
-.hidden {
+/*.hidden {
     display: none;
-}
+}*/
 .navigationButtons {
     border-bottom: solid;
     border-bottom-color: #FEFEFE;
