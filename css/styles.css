@@ -38,6 +38,10 @@ ul {
     margin: 0px;
 }
 
+#404Column {
+    margin-top: 50px;
+    width: 100%;
+}
 #column {
     width: 950px;
     margin: auto;
