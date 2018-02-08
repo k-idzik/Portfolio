@@ -22,10 +22,6 @@ h1 {
     margin-left: 30px;
     margin-top: 15px;
 }
-img {
-    height: 100%;
-    width: 100%;
-}
 indexFooter {
     bottom: -10px;
     position: fixed;
@@ -57,12 +53,16 @@ ul {
 }
 #columnLeft {
     float: left;
-    padding-top: 200px;
-    width: 70%;
+    padding-top: 325px;
+    width: 60%;
 }
 #columnRight {
     float: right;
-    width: 30%;
+    width: 40%;
+}
+#contactColumn {
+    margin: auto;
+    width: 100%;
 }
 #content {
     width: 100%;
@@ -85,16 +85,45 @@ ul {
     margin-top: 32px;
 }
 #profileImage {
-    box-shadow: 4px 4px 8px 0px #000000, 2px 2px 14px 0px #000000;
+    border: solid;
+    border-color: #000000;
+    border-width: 1px;
     display: block;
-    float: right;
-    margin: 25px;
+    height: 700px;
+    margin: auto;
     margin-top: 50px;
+    padding: 10px;
+    width: 700px;
+}
+#submit {
+    background-color: #FEFEFE;
+    border: solid;
+    border-color: #000000;
+    border-width: 1px;
+    padding: 10px;
+    text-align: center;
+}
+#textWrap {
+    border: solid;
+    border-color: #000000;
+    border-width: 1px;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
 }
 
-/*.hidden {
-    display: none;
-}*/
+.buttonTextWrap {
+    border: solid;
+    border-color: #000000;
+    border-width: 1px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+.linkImg {
+    margin-bottom: -10px;
+    padding-right: 5px;
+}
 .navigationButtons {
     border-bottom: solid;
     border-bottom-color: #FEFEFE;
@@ -109,6 +138,13 @@ ul {
 .navigationButtons:hover {
     border-bottom-color: #CACACA;
 }
+.projectImg {
+    height: 100%;
+    width: 100%;
+}
+.spacer {
+    margin: 10px;
+}
 .textWrap {
     background-color: #FEFEFE;
     border: solid;
@@ -120,7 +156,6 @@ ul {
 .textWrap + .textWrap {
     margin-top: -25px;
 }
-
 
 @keyframes colorChanger {
     from {
