@@ -47,10 +47,6 @@ ul {
     padding: 10px;
     text-align: center;
 }
-#column {
-    width: 950px;
-    margin: auto;
-}
 #columnLeft {
     float: left;
     padding-top: 325px;
@@ -84,6 +80,10 @@ ul {
     float: right;
     margin-top: 32px;
 }
+#pdfColumn {
+    margin: auto;
+    width: 950px;
+}
 #profileImage {
     border: solid;
     border-color: #000000;
@@ -94,6 +94,10 @@ ul {
     margin-top: 50px;
     padding: 10px;
     width: 700px;
+}
+#projectsColumn {
+    margin: auto;
+    width: 1000px;
 }
 #submit {
     background-color: #FEFEFE;
@@ -138,9 +142,12 @@ ul {
 .navigationButtons:hover {
     border-bottom-color: #CACACA;
 }
-.projectImg {
-    height: 100%;
-    width: 100%;
+.projectsImg {
+    display: block;
+    margin: auto;
+}
+.projectsText {
+    margin-bottom: 25px;
 }
 .spacer {
     margin: 10px;

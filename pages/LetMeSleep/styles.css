@@ -1,0 +1,22 @@
+body
+{
+    background: #eeeeee;
+	font-family: 'Permanent Marker', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}       
+canvas
+{
+    background: #87CEEB;
+    display: block; /*Centering*/
+    margin: auto; /*Centering*/
+}
+h1
+{
+    text-align: center;
+}
+
+#AudioControl
+{
+    display: none;
+}
