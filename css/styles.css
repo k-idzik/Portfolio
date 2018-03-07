@@ -167,6 +167,7 @@ ul {
     margin-top: -25px;
 }
 
+/*Animated highlight*/
 @keyframes colorChanger {
     from {
         text-shadow: 0px 0px 1px #FF0000, 0px 0px 1px #FF0000, 0px 0px 1px #FF0000, 0px 0px 1px #FF0000;
@@ -194,16 +195,75 @@ ul {
     }
 }
 
-@media screen and (max-width: 1280px) {
-    #columnLeft {
-        padding-top: 150px;
-        width: 60%;
-    }
-    #columnRight {
-        width: 40%;
+/*Homepage adjustment*/
+@media screen and (max-width: 1850px) {
+    #profileImage {
+        height: 600px;
+        width: 600px;
     }
 }
-@media screen and (max-width: 720px) {
+/*Homepage adjustment*/
+@media screen and (max-width: 1600px) {
+    #columnLeft {
+        padding-top: 225px;
+    }
+    #profileImage {
+        height: 500px;
+        width: 500px;
+    }
+}
+/*Homepage adjustment*/
+@media screen and (max-width: 1366px) {
+    #columnLeft {
+        padding-top: 200px;
+    }
+    #profileImage {
+        height: 450px;
+        width: 450px;
+    }
+}
+/*Homepage adjustment*/
+@media screen and (max-width: 1280px) {
+    #columnLeft {
+        padding-top: 125px;
+    }
+    #profileImage {
+        height: 350px;
+        width: 350px;
+    }
+}
+/*Projects page adjustment*/
+@media screen and (max-width: 1020px) {
+    #bfImg, #dxImg {
+        height: 360px;
+        width: 640px;
+    }
+    #projectsColumn {
+        width: 900px;
+    }
+}
+/*Homepage adjustment*/
+@media screen and (max-width: 950px) {
+    #columnLeft {
+        padding-top: 85px;
+    }
+    #profileImage {
+        height: 300px;
+        width: 300px;
+    }
+}
+/*Projects page adjustment*/
+@media screen and (max-width: 920px) {
+    #bfImg, #dxImg {
+        height: 240px;
+        width: 427px;
+    }
+    #projectsColumn {
+        width: 600px;
+    }
+}
+/*Homepage adjustment*/
+@media screen and (max-width: 805px) {
     h1 {
         float: none;
         margin-left: auto;
@@ -214,47 +274,57 @@ ul {
         float: none;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
+        margin-bottom: 0px;
         text-align: center;
         width: 100%;
     }
 
     #columnLeft {
+        clear: both;
+        margin-bottom: -20px;
         padding-top: 0px;
-        width: 58%;
+        width: 100%;
     }
     #columnRight {
-        width: 42%;
+        clear: both;
+        width: 100%;
+    }
+    #navigation {
+        float: none;
+    }
+    #profileImage {
+        height: 500px;
+        width: 500px;
+    }
+}
+/*Homepage and projects page adjustment*/
+@media screen and (max-width: 620px) {
+    #bfImg, #dxImg {
+        height: 180px;
+        width: 320px;
+    }
+    #projectsColumn {
+        width: 400px;
     }
 
-    .dropdownChild {
-        height: 42px;
+    .textWrap {
+        margin-left: 20px;
+        margin-right: 20px;
     }
+}
+/*Homepage adjustment*/
+@media screen and (max-width: 600px) {
+    #profileImage {
+        height: 400px;
+        width: 400px;
+    }
+
     .navigationButtons {
         padding-left: 15px;
         padding-right: 15px;
     }
 }
 @media screen and (max-width: 480px) {
-    #columnLeft {
-        clear: both;
-        float: none;
-        width: 100%;
-    }
-    #columnRight {
-        display: none;
-    }
-    #navigation {
-        display: flex;
-        float: none;
-    }
 
-    .navigationButtons {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .textWrap {
-        margin-left: 50px;
-        margin-right: -140px;
-        margin-top: -50px;
-    }
 }
