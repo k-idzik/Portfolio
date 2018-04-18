@@ -22,6 +22,12 @@ h1 {
     margin-left: 30px;
     margin-top: 15px;
 }
+h2 {
+    margin-bottom: 0;
+}
+h5 {
+    margin-top: 0;
+}
 indexFooter {
     bottom: -10px;
     position: fixed;
@@ -238,6 +244,10 @@ ul {
         height: 360px;
         width: 640px;
     }
+    #oktImg {
+        height: 311px;
+        width: 640px;
+    }
     #projectsColumn {
         width: 900px;
     }
@@ -256,6 +266,10 @@ ul {
 @media screen and (max-width: 920px) {
     #bfImg, #dxImg {
         height: 240px;
+        width: 427px;
+    }
+    #oktImg {
+        height: 207px;
         width: 427px;
     }
     #projectsColumn {
@@ -302,6 +316,10 @@ ul {
 @media screen and (max-width: 620px) {
     #bfImg, #dxImg {
         height: 180px;
+        width: 320px;
+    }
+    #oktImg {
+        height: 155px;
         width: 320px;
     }
     #projectsColumn {

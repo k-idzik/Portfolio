@@ -2,7 +2,6 @@ a {
     color: #000000;
     text-decoration: none;
 }
-
 body {
     background-color: #FEFEFE;
     color: #000000;
@@ -11,39 +10,32 @@ body {
     margin: 0px;
     padding: 0px;
 }
-
 footer {
     bottom: 0;
     clear: both;
     position: fixed;
     right: 0;
 }
-
 h1 {
     float: left;
     margin-bottom: 0px;
     margin-left: 30px;
     margin-top: 15px;
 }
-
 h2 {
     float: left;
     margin-left: 30px;
 }
-
-    h2 ~ .textWrap {
-        clear: both;
-    }
-
+h2 ~ .textWrap {
+    clear: both;
+}
 h3 {
     float: left;
     margin-left: 30px;
 }
-
 li {
     list-style: none;
 }
-
 ul {
     margin: 0px;
 }
@@ -53,54 +45,44 @@ ul {
     padding: 0px;
     width: 60%;
 }
-
 #columnRight {
     float: right;
     padding: 0px;
     padding-top: 30px;
     width: 40%;
 }
-
 #content {
     width: 100%;
 }
-
 #currentNavigationButton {
     border-bottom-color: #FA7800;
 }
-
 #divider {
     border-bottom: solid;
     border-bottom-color: #000000;
     border-bottom-width: 1px;
     clear: both;
 }
-
 #downloads > .textWrap {
     margin-top: 0px;
 }
-
 #dropdownParent li {
     position: relative;
 }
-
 #dropdownParent ul {
     margin: 0px;
     padding: 0px;
     position: absolute;
 }
-
 #linkBox > .textWrap {
     clear: both;
     margin-top: 0px;
 }
-
 #navigation {
     display: flex;
     float: right;
     margin-top: 32px;
 }
-
 #thumbnail {
     box-shadow: 4px 4px 8px 0px #000000, 2px 2px 14px 0px #000000;
     display: block;
@@ -123,15 +105,12 @@ ul {
     text-align: center;
     transition: .65s ease-in-out;
 }
-
-    .dropdownChild + .dropdownChild {
-        margin-top: 0px;
-    }
-
-    .dropdownChild:hover {
-        border-bottom-color: #CACACA;
-    }
-
+.dropdownChild + .dropdownChild {
+    margin-top: 0px;
+}
+.dropdownChild:hover {
+    border-bottom-color: #CACACA;
+}
 .navigationButtons {
     border-bottom: solid;
     border-bottom-color: #FEFEFE;
@@ -143,11 +122,9 @@ ul {
     text-align: center;
     transition: .65s ease-in-out;
 }
-
-    .navigationButtons:hover {
-        border-bottom-color: #CACACA;
-    }
-
+.navigationButtons:hover {
+    border-bottom-color: #CACACA;
+}
 .textWrap {
     border: solid;
     border-color: #000000;
@@ -172,13 +149,11 @@ ul {
         width: 40%;
     }
 }
-
 @media screen and (max-width: 800px) {
     #columnRight {
         padding-top: 100px;
     }
 }
-
 @media screen and (max-width: 720px) {
     h1 {
         float: none;
@@ -214,7 +189,6 @@ ul {
         padding-right: 15px;
     }
 }
-
 @media screen and (max-width: 480px) {
     #columnLeft {
         clear: both;
